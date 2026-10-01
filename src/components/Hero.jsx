@@ -86,7 +86,7 @@ function Hero() {
 
             <div className="product-image">
               <img
-                src="/images/frontdash.png"
+                src="/images/frontdash.webp"
                 alt="Pentium Labs ERP"
               />
             </div>

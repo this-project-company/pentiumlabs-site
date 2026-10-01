@@ -96,7 +96,7 @@ function MobileApp() {
 
               <div className="phone-screen">
                 <img
-                  src="/images/mobiledash.png"
+                  src="/images/mobiledash.webp"
                   alt="Pentium Labs technician mobile application"
                 />
               </div>

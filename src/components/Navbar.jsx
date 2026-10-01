@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#home" className="navbar-brand">
-        <img src="/images/logo.png" alt="Pentium Labs" />
+        <img src="/images/logo.webp" alt="Pentium Labs" />
         <span>Pentium Labs</span>
       </a>
 
