@@ -29,7 +29,7 @@ function Hero() {
           </h1>
 
           <p>
-            Out Product <b>Namaste Service</b> connects customers, digital stores, authorised
+            Our Product <b>Namaste Service</b> connects customers, digital stores, authorised
             service centers and technicians through one intelligent ERP
             platform.
           </p>

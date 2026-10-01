@@ -13,11 +13,7 @@ function Footer() {
           />
 
           <div>
-            <h3>Pentium Labs</h3>
-            <p>
-              Building connected software for
-              modern service operations.
-            </p>
+            <h3>Pentium Labs LLP</h3>
           </div>
         </div>
 
