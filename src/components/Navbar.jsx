@@ -9,18 +9,18 @@ function Navbar() {
       </a>
 
       <div className="navbar-links">
-        <a href="#product">Product</a>
-        <a href="#mobile-app">Technician App</a>
-        <a href="#pricing">Pricing</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <a
-        href="mailto:pentiumlabs@gmail.com"
+        href="mailto:pentiumlabs@gmail.com?subject=Project%20Enquiry"
         className="navbar-contact"
-        >
-    Contact Us
-    <span>↗</span>
-</a>
+      >
+        Start a Project
+        <span>↗</span>
+      </a>
     </nav>
   );
 }

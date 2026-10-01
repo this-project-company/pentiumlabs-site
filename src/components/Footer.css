@@ -12,7 +12,6 @@
   margin: auto;
 
   display: flex;
-
   align-items: center;
   justify-content: space-between;
 
@@ -35,13 +34,15 @@
 }
 
 .footer-brand h3 {
+  margin: 0;
+
   font-size: 15px;
 }
 
 .footer-brand p {
-  margin-top: 5px;
+  margin: 5px 0 0;
 
-  color: #8090a4;
+  color: #607087;
 
   font-size: 11px;
 }

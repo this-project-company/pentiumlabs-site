@@ -18,78 +18,34 @@ function Hero() {
         >
           <div className="eyebrow">
             <span className="eyebrow-line" />
-            Service Operations Platform
+            SOFTWARE ENGINEERING & TECHNOLOGY SERVICES
             <span className="eyebrow-line" />
           </div>
 
           <h1>
-            One platform.
+            We build software
             <br />
-            <span>Every service.</span>
+            <span>businesses depend on.</span>
           </h1>
 
           <p>
-            Our Product <b>Namaste Service</b> connects customers, digital stores, authorised
-            service centers and technicians through one intelligent ERP
-            platform.
+            Pentium Labs designs, builds and operates custom software,
+            web applications, mobile apps and business systems for
+            companies that need technology built around the way they work.
           </p>
 
           <div className="hero-buttons">
-            <a
-                href="https://namasteservice.in"
-                className="hero-primary"
-            >
-            Live Demo
-        <span>↗</span>
+
+            <a href="#work" className="hero-secondary">
+              See Our Work
+              <span>↓</span>
             </a>
-            </div>
-        </motion.div>
-
-        <motion.div
-          className="product-preview"
-          initial={{ opacity: 0, y: 70 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.9,
-            delay: 0.15,
-          }}
-        >
-          <div className="preview-label preview-label-one">
-            <span className="label-dot" />
-            ERP Platform
           </div>
 
-          <div className="preview-label preview-label-two">
-            <span>●</span>
-            Service management
-          </div>
-
-          <div className="preview-shadow" />
-
-          <div className="product-window">
-            <div className="product-window-bar">
-              <div className="window-controls">
-                <i />
-                <i />
-                <i />
-              </div>
-
-              <div className="window-title">
-                NamasteService ERP
-              </div>
-
-              <div className="window-status">
-                <span />
-                Live
-              </div>
-            </div>
-
-            <div className="product-image">
-              <img
-                src="/images/frontdash.webp"
-                alt="Pentium Labs ERP"
-              />
-            </div>
+          <div className="hero-meta">
+            <span>01</span>
+            <div />
+            <span>Software · Systems · Automation</span>
           </div>
         </motion.div>
       </div>

@@ -1,16 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url(
+  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+);
+
+:root {
+  font-family: "Inter", sans-serif;
+
+  color: #081525;
+  background: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --blue: #126df3;
+  --dark: #07111f;
+  --text: #081525;
+  --muted: #68798d;
+  --border: #dce5ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body,
 #root {
   width: 100%;
   min-height: 100%;
+
   margin: 0;
   padding: 0;
 }
 
 body {
   overflow-x: hidden;
+
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -22,7 +51,12 @@ a {
   font-family: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .app {
   min-height: 100vh;
+
   overflow: hidden;
 }

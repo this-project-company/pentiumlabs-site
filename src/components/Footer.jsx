@@ -2,10 +2,8 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer id="contact" className="footer">
-
+    <footer className="footer">
       <div className="footer-inner">
-
         <div className="footer-brand">
           <img
             src="/images/logo.webp"
@@ -14,6 +12,9 @@ function Footer() {
 
           <div>
             <h3>Pentium Labs LLP</h3>
+            <p>
+              Software Engineering & Technology Services
+            </p>
           </div>
         </div>
 
@@ -24,7 +25,6 @@ function Footer() {
           pentiumlabs@gmail.com
           <span>↗</span>
         </a>
-
       </div>
 
       <div className="footer-bottom">
@@ -33,10 +33,9 @@ function Footer() {
         </span>
 
         <span>
-          Service Operations Platform
+          Software · Systems · Automation
         </span>
       </div>
-
     </footer>
   );
 }

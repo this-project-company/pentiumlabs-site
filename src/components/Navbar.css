@@ -15,10 +15,10 @@
   align-items: center;
   justify-content: space-between;
 
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(20px);
 
-  border: 1px solid rgba(15, 35, 60, 0.09);
+  border: 1px solid rgba(15, 35, 60, 0.08);
   border-radius: 16px;
 
   box-shadow:
@@ -31,9 +31,10 @@
   align-items: center;
   gap: 10px;
 
+  color: #081525;
+
   text-decoration: none;
 
-  color: #0a1628;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -52,21 +53,48 @@
 
   display: flex;
   align-items: center;
-  gap: 34px;
+
+  gap: 30px;
 }
 
 .navbar-links a {
-  text-decoration: none;
+  position: relative;
 
   color: #607086;
+
+  text-decoration: none;
+
   font-size: 13px;
   font-weight: 500;
 
   transition: color 0.2s ease;
 }
 
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -7px;
+
+  height: 1px;
+
+  background: #126df3;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.2s ease;
+}
+
 .navbar-links a:hover {
   color: #126df3;
+}
+
+.navbar-links a:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar-contact {
@@ -114,5 +142,10 @@
 
   .navbar-brand span {
     display: none;
+  }
+
+  .navbar-contact {
+    padding: 9px 12px;
+    font-size: 12px;
   }
 }
