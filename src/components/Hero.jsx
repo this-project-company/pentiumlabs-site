@@ -4,23 +4,39 @@ import "./Hero.css";
 function Hero() {
   return (
     <section id="home" className="hero">
-      <div className="hero-grid" />
 
-      <div className="hero-orb hero-orb-left" />
-      <div className="hero-orb hero-orb-right" />
+      <div className="hero-background">
+        <div className="hero-glow hero-glow-one" />
+        <div className="hero-glow hero-glow-two" />
+        <div className="hero-grid" />
+      </div>
 
-      <div className="hero-inner">
+      <div className="hero-container">
+
         <motion.div
-          className="hero-copy"
+          className="hero-logo"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <a href="#home">
+            <img
+              src="/images/logo.webp"
+              alt="Pentium Labs"
+            />
+
+            <span>Pentium Labs</span>
+          </a>
+        </motion.div>
+
+        <motion.div
+          className="hero-content"
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <div className="eyebrow">
-            <span className="eyebrow-line" />
-            SOFTWARE ENGINEERING & TECHNOLOGY SERVICES
-            <span className="eyebrow-line" />
-          </div>
+
+
 
           <h1>
             We build software
@@ -34,20 +50,42 @@ function Hero() {
             companies that need technology built around the way they work.
           </p>
 
-          <div className="hero-buttons">
-
-            <a href="#work" className="hero-secondary">
+          <div className="hero-action">
+            <a href="#work" className="hero-button">
               See Our Work
               <span>↓</span>
             </a>
           </div>
 
-          <div className="hero-meta">
-            <span>01</span>
-            <div />
+        </motion.div>
+
+        <motion.div
+          className="hero-visual"
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.35 }}
+        >
+          <div className="hero-orbit hero-orbit-one" />
+          <div className="hero-orbit hero-orbit-two" />
+
+          <div className="hero-dot hero-dot-one" />
+          <div className="hero-dot hero-dot-two" />
+          <div className="hero-dot hero-dot-three" />
+
+          <div className="hero-center">
+
+            <div className="hero-center-logo">
+              <img
+                src="/images/logo.webp"
+                alt=""
+              />
+            </div>
+
             <span>Software · Systems · Automation</span>
+
           </div>
         </motion.div>
+
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import "./Work.css";
 
 const projects = [
   {
-    number: "CASE STUDY / 001",
+    number: "001",
     title: "Namaste Service",
     type: "Service Management Platform",
     description:
@@ -14,9 +14,10 @@ const projects = [
     imageAlt: "Namaste Service ERP dashboard",
     link: "https://namasteservice.in",
     linkText: "Explore Namaste Service",
+    imageClass: "dashboard-image",
   },
   {
-    number: "CASE STUDY / 002",
+    number: "002",
     title: "ServiceBill",
     type: "Billing & Sales Intelligence Platform",
     description:
@@ -26,6 +27,7 @@ const projects = [
     imageAlt: "ServiceBill mobile application",
     link: "#contact",
     linkText: "Discuss a Similar Project",
+    imageClass: "mobile-image",
   },
 ];
 
@@ -46,9 +48,8 @@ function Work() {
 
   return (
     <section id="work" className="work-section">
-      <div className="work-container">
 
-        {/* Heading */}
+      <div className="work-container">
 
         <motion.div
           className="work-heading"
@@ -56,29 +57,31 @@ function Work() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <div className="section-eyebrow">SELECTED WORK</div>
+          <div>
+            <div className="section-eyebrow">
+              SELECTED WORK
+            </div>
 
-          <h2>
-            Software we've
-            <br />
-            <span>built in the real world.</span>
-          </h2>
-
+            <h2>
+              Software we've
+              <br />
+              <span>built in the real world.</span>
+            </h2>
+          </div>
         </motion.div>
-
-        {/* Slider */}
 
         <div className="work-slider">
 
           <AnimatePresence mode="wait">
+
             <motion.article
               key={current}
               className="case-study"
-              initial={{ opacity: 0, x: 80 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -80 }}
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -25 }}
               transition={{
-                duration: 0.45,
+                duration: 0.4,
                 ease: "easeOut",
               }}
               drag="x"
@@ -94,8 +97,6 @@ function Work() {
                 }
               }}
             >
-
-              {/* Content */}
 
               <div className="case-study-copy">
 
@@ -115,7 +116,9 @@ function Work() {
 
                 <div className="case-tags">
                   {project.tags.map((tag) => (
-                    <span key={tag}>{tag}</span>
+                    <span key={tag}>
+                      {tag}
+                    </span>
                   ))}
                 </div>
 
@@ -139,41 +142,48 @@ function Work() {
 
               </div>
 
-              {/* Image */}
-
               <div className="case-study-image">
-                <div
-                  className={`case-window ${
-                    project.title === "ServiceBill"
-                      ? "servicebill-window"
-                      : ""
-                  }`}
-                >
 
-                  <div className="case-window-bar">
-                    <span />
-                    <span />
-                    <span />
+                <div className="case-window">
+
+                  <div className="case-window-top">
+
+                    <div className="case-window-dots">
+                      <span />
+                      <span />
+                      <span />
+                    </div>
+
+                    <span className="case-window-label">
+                      {project.title}
+                    </span>
+
                   </div>
 
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                  />
+                  <div className="case-window-screen">
+
+                    <img
+                      className={project.imageClass}
+                      src={project.image}
+                      alt={project.imageAlt}
+                    />
+
+                  </div>
 
                 </div>
+
               </div>
 
             </motion.article>
+
           </AnimatePresence>
 
         </div>
 
-        {/* Slider controls */}
-
         <div className="work-controls">
 
           <div className="work-counter">
+
             <span>
               {String(current + 1).padStart(2, "0")}
             </span>
@@ -183,6 +193,7 @@ function Work() {
             <span>
               {String(projects.length).padStart(2, "0")}
             </span>
+
           </div>
 
           <div className="work-arrows">
@@ -208,6 +219,7 @@ function Work() {
         </div>
 
       </div>
+
     </section>
   );
 }

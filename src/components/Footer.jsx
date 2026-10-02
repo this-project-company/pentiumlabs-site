@@ -3,8 +3,11 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
+
       <div className="footer-inner">
+
         <div className="footer-brand">
+
           <img
             src="/images/logo.webp"
             alt="Pentium Labs"
@@ -12,10 +15,12 @@ function Footer() {
 
           <div>
             <h3>Pentium Labs LLP</h3>
+
             <p>
               Software Engineering & Technology Services
             </p>
           </div>
+
         </div>
 
         <a
@@ -25,9 +30,11 @@ function Footer() {
           pentiumlabs@gmail.com
           <span>↗</span>
         </a>
+
       </div>
 
       <div className="footer-bottom">
+
         <span>
           © {new Date().getFullYear()} Pentium Labs
         </span>
@@ -35,7 +42,9 @@ function Footer() {
         <span>
           Software · Systems · Automation
         </span>
+
       </div>
+
     </footer>
   );
 }

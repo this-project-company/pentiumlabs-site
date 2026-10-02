@@ -1,429 +1,511 @@
 .work-section {
-  padding: 120px 7vw;
+  position: relative;
 
-  background: #f8fafc;
-  overflow: hidden;
+  padding: 150px 30px 170px;
+
+  background: #fafaf7;
 }
 
 .work-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--max-width);
 
   margin: 0 auto;
 }
 
-/* Heading */
+/* ----------------------------------
+   HEADING
+---------------------------------- */
 
 .work-heading {
-  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 65px;
 }
 
-.work-heading .section-eyebrow {
-  margin-bottom: 24px;
+.section-eyebrow {
+  margin-bottom: 20px;
+
+  color: #5b725d;
+
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .work-heading h2 {
   margin: 0;
 
-  color: #07111f;
-
-  font-size: clamp(48px, 6vw, 82px);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
-  font-weight: 800;
+  font-size: clamp(47px, 6vw, 76px);
+  line-height: 0.96;
+  letter-spacing: -0.065em;
+  font-weight: 600;
 }
 
 .work-heading h2 span {
-  color: #126df3;
+  color: #8b918b;
 }
 
-.work-heading p {
-  max-width: 620px;
+.work-heading-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-  margin: 28px 0 0;
+  margin-bottom: 8px;
 
-  color: #68798d;
+  color: #929790;
 
-  font-size: 17px;
-  line-height: 1.7;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
 }
 
-/* Slider */
-
-.work-slider {
-  position: relative;
-
-  width: 100%;
-
-  overflow: hidden;
+.work-heading-side span:first-child {
+  color: #315d3e;
 }
 
-/* Case study */
+.work-heading-side div {
+  width: 45px;
+  height: 1px;
+
+  background: #d9ddd6;
+}
+
+/* ----------------------------------
+   CASE STUDY
+---------------------------------- */
 
 .case-study {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   gap: 70px;
 
-  width: 100%;
+  min-height: 580px;
 
-  padding: 60px;
+  padding: 55px;
 
-  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
 
-  border: 1px solid #dce5ef;
-  border-radius: 18px;
+  background: #fff;
 
   box-shadow:
-    0 20px 60px rgba(7, 17, 31, 0.06);
-
-  cursor: grab;
-
-  user-select: none;
+    0 25px 70px rgba(31, 46, 34, 0.055);
 }
 
-.case-study:active {
-  cursor: grabbing;
-}
-
-/* Copy */
+/* ----------------------------------
+   COPY
+---------------------------------- */
 
 .case-study-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  min-width: 0;
 }
 
 .case-study-number {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
-  color: #126df3;
+  color: #60925f;
 
+  font-family: "DM Mono", monospace;
   font-size: 10px;
-  font-weight: 700;
-
-  letter-spacing: 0.15em;
+  letter-spacing: 0.08em;
 }
 
-.case-study-copy h3 {
+.case-study h3 {
   margin: 0;
 
-  color: #07111f;
-
-  font-size: clamp(44px, 5vw, 70px);
-  line-height: 1;
-
-  letter-spacing: -0.055em;
-}
-
-.case-study-type {
-  margin-top: 18px;
-
-  color: #126df3;
-
-  font-size: 13px;
+  font-size: clamp(39px, 4.5vw, 60px);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
   font-weight: 600;
 }
 
-.case-study-copy > p {
-  max-width: 520px;
+.case-study-type {
+  margin-top: 16px;
 
-  margin: 24px 0 0;
+  color: #8a9089;
 
-  color: #68798d;
-
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* Tags */
+.case-study-copy p {
+  max-width: 430px;
+
+  margin: 27px 0 0;
+
+  color: #666d66;
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ----------------------------------
+   TAGS
+---------------------------------- */
 
 .case-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 7px;
 
-  margin-top: 28px;
+  max-width: 450px;
+
+  margin-top: 25px;
 }
 
 .case-tags span {
-  padding: 8px 11px;
+  padding: 7px 10px;
 
-  color: #536579;
+  border: 1px solid #e2e5df;
+  border-radius: 100px;
 
-  background: #f1f5f9;
+  background: #fafbf8;
 
-  border: 1px solid #e1e8ef;
-  border-radius: 5px;
+  color: #737a73;
 
-  font-size: 10px;
-  font-weight: 600;
-
-  letter-spacing: 0.04em;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.02em;
 }
 
-/* Link */
+/* ----------------------------------
+   LINK
+---------------------------------- */
 
 .case-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 
   width: fit-content;
 
-  margin-top: 32px;
+  margin-top: 30px;
 
-  color: #07111f;
+  padding-bottom: 6px;
 
-  font-size: 13px;
-  font-weight: 700;
+  border-bottom: 1px solid #cfd4cc;
 
-  text-decoration: none;
+  color: #1b211c;
 
-  transition: color 0.2s ease;
-}
+  font-size: 11px;
+  font-weight: 600;
 
-.case-link:hover {
-  color: #126df3;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .case-link span {
-  font-size: 17px;
+  color: #538a54;
+
+  font-size: 15px;
+
+  transition: transform 0.2s ease;
 }
 
-/* Project image */
+.case-link:hover {
+  color: #417a45;
+  border-color: #417a45;
+}
+
+.case-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* ----------------------------------
+   IMAGE AREA
+---------------------------------- */
 
 .case-study-image {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  min-height: 480px;
-
-  padding: 20px;
-
-  background: #eef4fa;
-
-  border-radius: 12px;
-
-  overflow: hidden;
+  min-width: 0;
 }
+
+/*
+  THIS IS THE IMPORTANT PART.
+
+  The preview has a fixed visual height.
+  The source image can no longer expand the card.
+*/
 
 .case-window {
-  width: 92%;
-
-  background: #ffffff;
-
-  border: 1px solid #dce5ef;
-  border-radius: 10px;
+  width: 100%;
+  height: 410px;
 
   overflow: hidden;
 
+  border: 1px solid #e0e3dc;
+  border-radius: 18px;
+
+  background: #f4f5f1;
+
   box-shadow:
-    0 25px 60px rgba(7, 17, 31, 0.12);
+    0 25px 55px rgba(32, 46, 35, 0.09);
 }
 
-.case-window-bar {
-  height: 34px;
+.case-window-top {
+  height: 38px;
 
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: space-between;
 
-  padding: 0 12px;
+  padding: 0 14px;
 
-  background: #f7f9fb;
+  border-bottom: 1px solid #e1e4de;
 
-  border-bottom: 1px solid #e4eaf0;
+  background: rgba(255, 255, 255, 0.82);
 }
 
-.case-window-bar span {
-  width: 7px;
-  height: 7px;
+.case-window-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.case-window-dots span {
+  width: 6px;
+  height: 6px;
 
   border-radius: 50%;
 
-  background: #c7d1dc;
+  background: #cfd4cc;
 }
 
-.case-window img {
+.case-window-label {
+  color: #9a9f99;
+
+  font-family: "DM Mono", monospace;
+  font-size: 7px;
+  letter-spacing: 0.04em;
+}
+
+/* ----------------------------------
+   SCREEN
+---------------------------------- */
+
+.case-window-screen {
+  position: relative;
+
+  width: 100%;
+  height: calc(100% - 38px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(217, 235, 204, 0.55),
+      transparent 60%
+    ),
+    #eef1eb;
+}
+
+/*
+  Desktop/dashboard screenshot
+*/
+
+.case-window-screen .dashboard-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: top center;
+
+  display: block;
+}
+
+/*
+  Mobile screenshot
+
+  IMPORTANT:
+  contain prevents ServiceBill from
+  expanding the card.
+*/
+
+.case-window-screen .mobile-image {
   display: block;
 
-  width: 100%;
-  height: auto;
-}
-
-/* ServiceBill */
-
-.servicebill-window {
   width: auto;
-  max-width: 300px;
+  height: 92%;
 
-  border-radius: 24px;
-
-  box-shadow:
-    0 30px 70px rgba(7, 17, 31, 0.16);
-}
-
-.servicebill-window .case-window-bar {
-  display: none;
-}
-
-.servicebill-window img {
-  width: 100%;
-  max-height: 620px;
+  max-width: 82%;
 
   object-fit: contain;
+
+  filter: drop-shadow(
+    0 22px 25px rgba(25, 35, 28, 0.2)
+  );
 }
 
-/* Controls */
+/* ----------------------------------
+   CONTROLS
+---------------------------------- */
 
 .work-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 28px;
+  margin-top: 22px;
 }
-
-/* Counter */
 
 .work-counter {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 11px;
 
-  color: #8292a5;
+  color: #999e97;
 
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.1em;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
 }
 
 .work-counter span:first-child {
-  color: #126df3;
+  color: #4f8256;
 }
 
 .work-counter-line {
-  width: 60px;
+  width: 50px;
   height: 1px;
 
-  background: #cbd7e4;
+  background: #d9ddd6;
 }
-
-/* Arrows */
 
 .work-arrows {
   display: flex;
-  gap: 8px;
+  gap: 7px;
 }
 
 .work-arrows button {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #07111f;
-  background: #ffffff;
+  border: 1px solid #dfe2dc;
+  border-radius: 50%;
 
-  border: 1px solid #d5e0eb;
-  border-radius: 6px;
+  background: white;
 
-  font-size: 20px;
+  color: #232823;
 
   cursor: pointer;
 
   transition:
     background 0.2s ease,
-    color 0.2s ease,
     border-color 0.2s ease,
+    color 0.2s ease,
     transform 0.2s ease;
 }
 
 .work-arrows button:hover {
-  color: #ffffff;
-  background: #126df3;
+  border-color: #173e29;
 
-  border-color: #126df3;
+  background: #173e29;
+
+  color: white;
 
   transform: translateY(-2px);
 }
 
-/* Tablet */
+/* ----------------------------------
+   RESPONSIVE
+---------------------------------- */
 
-@media (max-width: 900px) {
-  .work-section {
-    padding: 90px 6vw;
-  }
-
+@media (max-width: 950px) {
   .case-study {
     grid-template-columns: 1fr;
 
-    gap: 45px;
+    gap: 50px;
 
     padding: 40px;
   }
 
   .case-study-image {
-    min-height: 400px;
+    order: 2;
+  }
+
+  .case-window {
+    height: 420px;
   }
 }
 
-/* Mobile */
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .work-section {
-    padding: 80px 24px;
+    padding: 110px 20px 120px;
   }
 
   .work-heading {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+  }
+
+  .work-heading-side {
+    display: none;
   }
 
   .work-heading h2 {
-    font-size: 45px;
-  }
-
-  .work-heading p {
-    font-size: 15px;
+    font-size: 48px;
   }
 
   .case-study {
-    gap: 35px;
-
     padding: 28px;
 
-    border-radius: 14px;
+    border-radius: 22px;
+
+    gap: 40px;
   }
 
-  .case-study-copy h3 {
-    font-size: 42px;
+  .case-study h3 {
+    font-size: 43px;
   }
 
-  .case-study-copy > p {
-    font-size: 15px;
+  .case-window {
+    height: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-section {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  .case-study-image {
-    min-height: 320px;
-
-    padding: 15px;
+  .work-heading h2 {
+    font-size: 43px;
   }
 
-  .servicebill-window {
-    max-width: 230px;
+  .case-study {
+    padding: 22px;
   }
 
-  .work-controls {
-    margin-top: 20px;
+  .case-study h3 {
+    font-size: 38px;
   }
 
-  .work-arrows button {
-    width: 44px;
-    height: 44px;
+  .case-window {
+    height: 300px;
+  }
+
+  .case-window-screen .mobile-image {
+    height: 90%;
+    max-width: 75%;
   }
 }
