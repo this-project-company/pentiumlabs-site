@@ -29,6 +29,19 @@ const projects = [
     linkText: "Discuss a Similar Project",
     imageClass: "mobile-image",
   },
+  {
+    number: "003",
+    title: "Pioneer Travels",
+    type: "Bus Booking App",
+    description:
+      "Customers can booking the desired bus based on the availability in date. Admin console to manage and keep records of the payment from customer and ride",
+    tags: ["Booking", "Mobile", "Web", "Sales Overview"],
+    image: "/images/busbooking.webp",
+    imageAlt: "Bus Booking App",
+    link: "#contact",
+    linkText: "Discuss a Similar Project",
+    imageClass: "dashboard-image",
+  }
 ];
 
 function Work() {
