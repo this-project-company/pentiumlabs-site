@@ -38,7 +38,7 @@ function Contact() {
             </p>
 
             <a
-              href="mailto:pentiumlabs@gmail.com?subject=Project%20Enquiry"
+              href="mailto:admin@pentiumlabs.com?subject=Project%20Enquiry"
               className="contact-button"
             >
               Start a Conversation

@@ -24,10 +24,10 @@ function Footer() {
         </div>
 
         <a
-          href="mailto:pentiumlabs@gmail.com"
+          href="mailto:admin@pentiumlabs.com"
           className="footer-email"
         >
-          pentiumlabs@gmail.com
+          admin@pentiumlabs.com
           <span>↗</span>
         </a>
 
