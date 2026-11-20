@@ -1,0 +1,423 @@
+
+.namaste-section {
+  position: relative;
+  padding: 145px 30px;
+
+  overflow: hidden;
+
+  background: #f1f5ed;
+}
+
+.namaste-container {
+  position: relative;
+
+  width: 100%;
+  max-width: var(--max-width);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* COPY */
+
+.namaste-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.namaste-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 30px;
+
+  color: #456b4a;
+
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.namaste-status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #65a65c;
+
+  box-shadow: 0 0 0 5px rgba(101, 166, 92, 0.12);
+}
+
+.namaste-label {
+  margin-bottom: 16px;
+
+  color: #6b8a69;
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.namaste-copy h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 5.5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.07em;
+  font-weight: 600;
+}
+
+.namaste-copy h2 span {
+  color: #527c54;
+}
+
+.namaste-description {
+  max-width: 480px;
+
+  margin: 28px 0 0;
+
+  color: #626c62;
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* FEATURES */
+
+.namaste-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  max-width: 460px;
+
+  margin-top: 25px;
+}
+
+.namaste-features span {
+  padding: 8px 12px;
+
+  border: 1px solid #dce5d8;
+  border-radius: 100px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  color: #5c705b;
+
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+}
+
+/* BUTTON */
+
+.namaste-actions {
+  margin-top: 32px;
+}
+
+.namaste-primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 12px 13px 12px 20px;
+
+  border-radius: 100px;
+
+  background: #173e29;
+  color: #fff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 25px rgba(23, 62, 41, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.namaste-primary-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #b7e96b;
+  color: #173e29;
+
+  font-size: 15px;
+}
+
+.namaste-primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 14px 30px rgba(23, 62, 41, 0.2);
+}
+
+/* PRODUCT CREDIT */
+
+.namaste-product-credit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 45px;
+  padding-top: 20px;
+
+  border-top: 1px solid #dce4d8;
+}
+
+.namaste-product-credit span {
+  color: #929c90;
+
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.namaste-product-credit strong {
+  color: #355c3b;
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+/* VISUAL */
+
+.namaste-visual {
+  position: relative;
+
+  min-width: 0;
+  padding: 35px 0;
+}
+
+.namaste-visual-glow {
+  position: absolute;
+
+  width: 80%;
+  height: 80%;
+
+  top: 10%;
+  left: 10%;
+
+  border-radius: 50%;
+
+  background: rgba(161, 204, 139, 0.35);
+
+  filter: blur(75px);
+}
+
+.namaste-image-card {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid #dce4d8;
+  border-radius: 20px;
+
+  background: #fff;
+
+  box-shadow: 0 30px 75px rgba(36, 65, 39, 0.12);
+}
+
+.namaste-image-header {
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 17px;
+
+  border-bottom: 1px solid #e8ece5;
+
+  background: #fff;
+}
+
+.namaste-image-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.namaste-image-dots span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #d2d9ce;
+}
+
+.namaste-image-header > span {
+  color: #899488;
+
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+}
+
+.namaste-image-content {
+  padding: 12px;
+
+  background: #f4f6f1;
+}
+
+.namaste-image-content img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+}
+
+/* FLOATING CARD */
+
+.namaste-floating-card {
+  position: absolute;
+  z-index: 2;
+
+  left: -35px;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 19px;
+
+  border: 1px solid #e4e9df;
+  border-radius: 13px;
+
+  background: #fff;
+
+  box-shadow: 0 15px 35px rgba(30, 55, 34, 0.1);
+}
+
+.namaste-floating-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #e8f5df;
+  color: #477a45;
+
+  font-size: 16px;
+}
+
+.namaste-floating-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.namaste-floating-card strong {
+  color: #28362a;
+  font-size: 11px;
+}
+
+.namaste-floating-card span {
+  color: #899288;
+  font-size: 9px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+  .namaste-container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .namaste-copy {
+    max-width: 650px;
+  }
+
+  .namaste-visual {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .namaste-floating-card {
+    left: -12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .namaste-section {
+    padding: 100px 20px;
+  }
+
+  .namaste-container {
+    gap: 45px;
+  }
+
+  .namaste-copy h2 {
+    font-size: 53px;
+  }
+
+  .namaste-description {
+    font-size: 13px;
+  }
+
+  .namaste-visual {
+    padding: 20px 0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .namaste-section {
+    padding: 85px 16px;
+  }
+
+  .namaste-copy h2 {
+    font-size: 46px;
+  }
+
+  .namaste-eyebrow {
+    font-size: 8px;
+  }
+
+  .namaste-image-header {
+    height: 36px;
+    padding: 0 10px;
+  }
+
+  .namaste-image-header > span {
+    font-size: 7px;
+  }
+
+  .namaste-image-content {
+    padding: 7px;
+  }
+
+  .namaste-floating-card {
+    left: -5px;
+    bottom: -5px;
+
+    padding: 11px 13px;
+  }
+
+  .namaste-product-credit {
+    margin-top: 35px;
+  }
+}

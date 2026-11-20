@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Work.css";
@@ -5,19 +6,6 @@ import "./Work.css";
 const projects = [
   {
     number: "001",
-    title: "Namaste Service",
-    type: "Service Management Platform",
-    description:
-      "A complete service-management system connecting customers, service centres and field technicians through one operational platform.",
-    tags: ["ERP", "Web Application", "Mobile", "Workflow", "Operations"],
-    image: "/images/frontdash.webp",
-    imageAlt: "Namaste Service ERP dashboard",
-    link: "https://namasteservice.in",
-    linkText: "Explore Namaste Service",
-    imageClass: "dashboard-image",
-  },
-  {
-    number: "002",
     title: "ServiceBill",
     type: "Billing & Sales Intelligence Platform",
     description:
@@ -30,14 +18,14 @@ const projects = [
     imageClass: "mobile-image",
   },
   {
-    number: "003",
+    number: "002",
     title: "Pioneer Travels",
     type: "Bus Booking App",
     description:
-      "Customers can booking the desired bus based on the availability in date. Admin console to manage and keep records of the payment from customer and ride",
+      "A bus booking solution that allows customers to find and book buses based on date and availability. Includes an admin console to manage bookings, payments and ride records.",
     tags: ["Booking", "Mobile", "Web", "Sales Overview"],
     image: "/images/busbooking.webp",
-    imageAlt: "Bus Booking App",
+    imageAlt: "Pioneer Travels bus booking application",
     link: "#contact",
     linkText: "Discuss a Similar Project",
     imageClass: "dashboard-image",
@@ -72,13 +60,13 @@ function Work() {
         >
           <div>
             <div className="section-eyebrow">
-              SELECTED WORK
+              ADDITIONAL WORK
             </div>
 
             <h2>
-              Software we've
+              Other projects
               <br />
-              <span>built in the real world.</span>
+              <span>we've worked on.</span>
             </h2>
           </div>
         </motion.div>

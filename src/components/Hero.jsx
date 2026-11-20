@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import "./Hero.css";
 
@@ -20,71 +21,113 @@ function Hero() {
           transition={{ duration: 0.6 }}
         >
           <a href="#home">
-            <img
-              src="/images/logo.webp"
-              alt="Pentium Labs"
-            />
-
+            <img src="/images/logo.webp" alt="Pentium Labs" />
             <span>Pentium Labs</span>
           </a>
         </motion.div>
 
-        <motion.div
-          className="hero-content"
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-        >
+        <div className="hero-product-layout">
 
+          <motion.div
+            className="hero-content"
+            initial={{ opacity: 0, x: -25 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+          >
 
-
-          <h1>
-            We build software
-            <br />
-            <span>businesses depend on.</span>
-          </h1>
-
-          <p>
-            Pentium Labs designs, builds and operates custom software,
-            web applications, mobile apps and business systems for
-            companies that need technology built around the way they work.
-          </p>
-
-          <div className="hero-action">
-            <a href="#work" className="hero-button">
-              See Our Work
-              <span>↓</span>
-            </a>
-          </div>
-
-        </motion.div>
-
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.96 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.35 }}
-        >
-          <div className="hero-orbit hero-orbit-one" />
-          <div className="hero-orbit hero-orbit-two" />
-
-          <div className="hero-dot hero-dot-one" />
-          <div className="hero-dot hero-dot-two" />
-          <div className="hero-dot hero-dot-three" />
-
-          <div className="hero-center">
-
-            <div className="hero-center-logo">
-              <img
-                src="/images/logo.webp"
-                alt=""
-              />
+            <div className="hero-product-eyebrow">
+              <span className="hero-eyebrow-dot" />
+              A FLAGSHIP PRODUCT BY PENTIUM LABS
             </div>
 
-            <span>Software · Systems · Automation</span>
+            <div className="hero-product-label">
+              INTRODUCING
+            </div>
 
-          </div>
-        </motion.div>
+            <h1>
+              Namaste
+              <br />
+              <span>Service.</span>
+            </h1>
+
+            <p>
+              A smarter way to manage service operations.
+              Bring customers, service requests, technicians
+              and business workflows together in one powerful
+              platform.
+            </p>
+
+            <div className="hero-product-features">
+              <span>Service Management</span>
+              <span>Customer Management</span>
+              <span>Technician Tracking</span>
+            </div>
+
+            <div className="hero-action">
+              <a
+                href="https://namasteservice.in"
+                target="_blank"
+                rel="noreferrer"
+                className="hero-button"
+              >
+                Explore Namaste Service
+                <span>↗</span>
+              </a>
+            </div>
+
+            <div className="hero-built-by">
+              DESIGNED & BUILT BY <strong>PENTIUM LABS</strong>
+            </div>
+
+          </motion.div>
+
+          <motion.div
+            className="hero-visual"
+            initial={{ opacity: 0, scale: 0.94, x: 25 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+          >
+
+            <div className="hero-visual-glow" />
+
+            <div className="hero-dashboard-frame">
+
+              <div className="hero-dashboard-topbar">
+                <div className="hero-dashboard-dots">
+                  <span />
+                  <span />
+                  <span />
+                </div>
+
+                <span>NAMASTE SERVICE · DASHBOARD</span>
+              </div>
+
+              <div className="hero-dashboard-image">
+                <img
+                  src="/images/frontdash.webp"
+                  alt="Namaste Service software dashboard"
+                />
+              </div>
+
+            </div>
+
+            <div className="hero-dashboard-caption">
+              <span className="hero-caption-check">✓</span>
+              <div>
+                <strong>One platform. Complete control.</strong>
+                <span>Service operations made simpler.</span>
+              </div>
+            </div>
+
+          </motion.div>
+
+        </div>
+
+        <div className="hero-bottom">
+          <span>SCROLL TO DISCOVER</span>
+          <span className="hero-scroll-line" />
+          <span>01 — 02</span>
+        </div>
 
       </div>
     </section>
